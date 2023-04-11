@@ -1,5 +1,6 @@
 package com.hhhhhb.controller;
 
+import com.hhhhhb.domain.ResponseResult;
 import com.hhhhhb.domain.entity.Article;
 import com.hhhhhb.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,9 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    @GetMapping("/list")
-    public List<Article> test() {
-        return articleService.list();
+    @GetMapping("/hotArticleList")
+    public ResponseResult hotArticleList() {
+        ResponseResult result =  articleService.hotArticleList();
+        return result;
     }
 }

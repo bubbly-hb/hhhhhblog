@@ -15,8 +15,8 @@ import lombok.NoArgsConstructor;
  */
 @SuppressWarnings("serial")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @TableName("hb_article")
 public class Article {
     @TableId

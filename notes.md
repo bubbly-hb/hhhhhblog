@@ -18,3 +18,7 @@ set global time_zone='+8:00';
 
 # 报错找不到table时
 实体类上面添加@TableName("数据库中的表名")并记得在主键上面添加@TableId
+
+# [报错Article::getStatus can't resolve method getStatus](https://blog.csdn.net/Fatelzg/article/details/120066669)
+- 首先检查一下idea中有没有安装Lombok。
+- idea的File —>setting—>搜索Annotation Processors—>勾选Enable annotation processing—>OK
